@@ -31,8 +31,8 @@ model = dict(
         ),
         ),
     neck=dict(
-        type='FPN',
-        in_channels=[256, 512, 1024, 2048],
+        type='HRFPN',
+        in_channels=[32, 64, 128, 256],
         out_channels=256,
         num_outs=5),
     rpn_head=dict(
